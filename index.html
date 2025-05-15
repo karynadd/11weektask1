@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tarot Talks</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<style type="text/css">
+		@font-face {font-family: 'Calypso'; src: url('fonts/Calypso.ttf') format('truetype'); font-weight: normal;font-style: normal;}
+		* {margin: 0; padding: 0; box-sizing: border-box;}
+		body {font-family: 'Calypso', serif; color: #f5c944; scroll-behavior: smooth; background: #2E2E30}
+		.container {height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background-image: url('backnew.png'); background-size: cover; background-position: center; backdrop-filter: blur(2px); padding: 60px 20px; text-align: center; backdrop-filter: blur(2px);}
+		.candle {position: absolute; width: 70px; z-index: 2; animation: float 3s ease-in-out infinite;}
+		.candle1 {top: 120px; left: 1200px; animation-delay: 0s;}
+		.candle2 {top:110px; left: 400px; animation-delay: 0.3s;}
+		.candle3 {top:350px; left: 140px; animation-delay: 0.6s;}
+		.candle4 {top:350px; left: 1400px; animation-delay: 0.9s;}
+		.candle5 {top:600px; left: 400px; animation-delay: 0.2s;}
+		.candle6 {top:600px; left: 1200px; animation-delay: 0.5s;}
+		@keyframes float {0% {transform: translateY(0);} 50% {transform: translateY(-40px);} 100% {transform: translateY(0);}}
+		.container2 {height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 60px 20px; text-align: center; backdrop-filter: blur(2px);}
+		h1 {font-size: 70px; line-height: 1.2; text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);}
+		h1 {font-size: 70px; line-height: 1.2; text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);}
+		.h1add {font-size: 90px; line-height: 1.2; text-shadow: 0 0 15px rgba(255, 215, 0, 0.3);}
+		.cta-button {display: inline-block; margin-top: 70px; padding: 12px 32px; background: #f5c944; color: #222;font-size: 20px; text-decoration: none; border-radius: 30px; box-shadow: 0 0 20px 5px rgba(245, 201, 68, 0.5); transition: all 0.3s ease;} 
+		.cta-button:hover {box-shadow: 0 0 30px 10px rgba(245, 201, 68, 0.8); background-color: #ffe066;}
+		.subtitle {font-size: 18px; margin-top: 30px; margin-bottom: 50px;}
+		.cards {display: flex; justify-items: center; gap: 70px; margin-bottom: 40px;}
+		.card1 {width: 246px; height: 420px; object-fit: cover; border: 1px solid #f5c944; box-shadow: 0 40px 50px rgba(245, 201, 68, 0.3); opacity: 0; transform: translateY(30px); animation: fadeInUp 0.6s forwards;}
+		.card2 {width: 246px; height: 420px; object-fit: cover; border: 1px solid #f5c944; box-shadow: 0 40px 50px rgba(245, 201, 68, 0.3); opacity: 0; transform: translateY(30px); animation: fadeInUp 0.6s forwards; animation-delay: 0.4s;}
+		.card3 {width: 246px; height: 420px; object-fit: cover; border: 1px solid #f5c944; box-shadow: 0 40px 50px rgba(245, 201, 68, 0.3); opacity: 0; transform: translateY(30px); animation: fadeInUp 0.6s forwards; animation-delay: 0.8s;}
+		.cardresult {width: 246px; height: 420px; object-fit: cover; border: 1px solid #f5c944; box-shadow: 0 40px 50px rgba(245, 201, 68, 0.3);}
+		@keyframes fadeInUp {to {opacity: 1; transform: translateY(0);}}
+		.result-content {display: flex; gap: 60px; align-items: flex-start; justify-content: center; flex-wrap: wrap;margin-bottom: 40px;}
+		.cardresult {height:420px; border: 2px; box-shadow: 0 20px 40px rgba(245, 201, 68, 0.2);}
+		.result-box {position: relative; border: 2px solid #f5c944; border-radius: 30px; padding: 40px 30px 30px; background-color: #1e1e1e; box-shadow: 0 0 40px rgba(245, 201, 68, 0.15); color: #f5c944; font-size: 16px; line-height: 1.6; text-align: left; max-width: 609px; max-height: 420px;}
+		.result-title {position: absolute; top: -22px; left: 30px; background-color: #f5c944; color: #222; padding: 10px 20px; fon-size: 18px; font-family: 'Calypso', serif; border-radius: 30px; box-shadow: 0 3px 8px rgba(245, 201, 68, 0.3); white-space: nowrap; z-index: 2;}
+		.result-body {background-color: #1e1e1e; color: #f5c944; border-bottom-left-radius: 30px;border-bottom-right-radius: 30px; font-size: 16px; line-height: 1.6;}}
+		.result-advice {font-size: 20px; font-weight: 500;}
+
+
+	</style>
+</head>
+<body>
+		<section id="intro" class="container">
+
+			<img src="candle.gif" class="candle candle1">
+			<img src="candle.gif" class="candle candle2">
+			<img src="candle.gif" class="candle candle3">
+			<img src="candle.gif" class="candle candle4">
+			<img src="candle.gif" class="candle candle5">
+			<img src="candle.gif" class="candle candle6">
+  
+			<h1>DO YOU BELIVE</h1>
+			<h1 class="h1add">TAROT?</h1>
+			<a href="#" class="cta-button">Start Reading →</a>
+		</section>
+
+		<section id="love" class="container2">
+			<h1>LOVE AND RELATIONSHIPS</h1>
+			<p class="subtitle">What do the cards say about your love life?</p>
+
+			<div class="cards">
+				<img src="cardback.png" alt="Tarot Card" class="card1" onclick="showResult()">
+				<img src="cardback.png" alt="Tarot Card" class="card2" onclick="showResult()">
+				<img src="cardback.png" alt="Tarot Card" class="card3" onclick="showResult()">
+			</div>
+
+			<a href="#" class="cta-button" id="drawButton">Draw Tarot →</a>
+		</section>
+
+		<section id="resultSection" class="container2" style="display: none;">
+			<h1>LOVE AND RELATIONSHIPS</h1>
+			<p class="subtitle">Choose one card below</p>
+			<div class="result-content">
+				<img src="QueenOfSwords.png" alt="Queen of Swords" class="cardresult">
+
+				<div class="result-box">
+					  <div class="result-title">Queen of Swords – Love & Relationships</div>
+					  <div class="result-body">
+					    <p>
+					      A time for honesty and clear thinking in love. This card suggests emotional maturity, healthy boundaries, and the courage to see things as they are. Don’t let emotions cloud your judgment — speak your truth and stay true to your values.
+					    </p>
+					    <p class="result-advice">
+					      <strong>Advice:</strong><br>
+					      Love wisely. Be kind, but don’t ignore red flags.
+					    </p>
+					  </div>
+				</div>
+			</div>
+			<a href="#" class="cta-button" onclick="goBack()">Redraw Tarot →</a>
+		</section>
+
+
+</body>
+
+<script>
+  function showResult() {
+    document.getElementById("resultSection").style.display = "block";
+    document.getElementById("love").style.display = "none";
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function goBack() {
+    document.getElementById("resultSection").style.display = "none";
+    document.getElementById("love").style.display = "block";
+    window.scrollTo({ top: document.getElementById("love").offsetTop, behavior: 'smooth' });
+  }
+</script>
+</html>
